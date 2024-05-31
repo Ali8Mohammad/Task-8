@@ -63,8 +63,8 @@
 .for-mobile {
     display: none;
     position: absolute;
-    right: 0;
-    bottom: 0;
+    right: 20px;
+    bottom: 10px;
     width: 10%;
 }
 @media screen and (max-width:1000px) {
@@ -84,19 +84,21 @@
 }
 @media screen and (max-width:545px) {
     .branding-content, .marketing-content {
-        padding-left: 3px;
+        padding: 20px;
     }
     .title-card {
         margin: 10px 0 0 0 ;
     }
 }
-@media screen and (max-width:350px) {
+@media screen and (max-width:371px) {
     .branding, .Marketing {
         width: 98% !important;
         height: 630px;
         margin: 0px auto;
+        
     }
     .branding-content , .marketing-content {
-        height: 500px;
+        height: 520px;
+        padding: 10px;
     }
 }

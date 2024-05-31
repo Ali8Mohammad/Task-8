@@ -41,8 +41,8 @@
 .Images::before {
     content: 'Start';
     position: absolute;
-    left: 60%;
-    top: -50%;
+    left: 67%;
+    top: -60%;
     color: #ff8500;
     z-index: 6;
     font-size: 27px;
@@ -105,9 +105,25 @@
     width: 40%;
 }
 /* Responsive */
+@media screen and (max-width:1200px) {
+    .Images::before {
+        left: 65%;
+    }
+}
 @media screen and (max-width:1167px) {
     .content p {
         font-size: 16px !important;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .Images::before {
+        left: 62%;
+        top: -56%;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .Images::before {
+        left: 58%;
     }
 }
 @media screen and (max-width: 930px) {

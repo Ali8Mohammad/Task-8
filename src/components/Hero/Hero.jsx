@@ -35,6 +35,7 @@ function Hero() {
               src="https://www.focal-x.com/assets/img/home/pattren.png"
               className="pattren"
             />
+            
           </div>
           <div className="links-footer">
                 <ul className="social-hero">

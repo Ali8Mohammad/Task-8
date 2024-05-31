@@ -6,8 +6,35 @@
 body {
   font-family: "Montserrat", sans-serif;
 }
+::-webkit-scrollbar {
+  width: 30px; 
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ff8500; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #ff6500;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+  border-radius: 10px; 
+}
+
+/* Custom scrollbar for Firefox */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #ff8500 #f1f1f1; 
+}
 html{
   scroll-behavior: smooth;
+}
+::selection {
+  background-color: #222222;
+  color: #ff8500; 
 }
 ul {
   list-style: none;

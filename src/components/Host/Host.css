@@ -15,6 +15,7 @@
     width: 23.4%;
     border-radius: 16px;
     height: 410px;
+    position: relative;
 }
 .basic-card, .pro-card, .business-card, .enterprice-card {
     position: relative;
@@ -53,6 +54,9 @@
     padding: 10px 0 20px 20px;
 }
 .btn-subscribe {
+    position: absolute;
+    left: 4px;
+    bottom: 0;
     width: 97%;
     margin: 30px 0;
     padding: 10px;
@@ -124,12 +128,12 @@
 }
 @media screen and  (max-width:400px) {
     .header-card {
-        padding: 30px 0px 20px 3px;
+        padding: 30px 0px 20px 10px;
     }
     .header-card p {
         padding: 0;
     }
     .card-body {
-        padding: 0px 0 20px 3px;
+        padding: 0px 0 20px 10px;
     }
 }

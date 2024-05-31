@@ -33,7 +33,10 @@ function Nav() {
                 </div>
                 <ul className="links">
                     {links.map((link, index) => (
-                        <li key={index}><a href={link.href}>{link.text}</a></li>
+                        <li key={index}
+                        className={activeLink === index ? 'links-active' : ''}
+                        onClick={() => handleLinkClick(index)}>
+                        <a href={link.href}>{link.text}</a></li>
                     ))}
                 </ul>
             </div>
