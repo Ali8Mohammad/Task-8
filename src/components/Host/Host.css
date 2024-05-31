@@ -1,0 +1,135 @@
+.cards-host {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0 30px;
+}
+.Host .title {
+    color: white;
+    padding: 50px 0;
+}
+.card-host {
+    background-color: white;
+    width: 23.4%;
+    border-radius: 16px;
+    height: 410px;
+}
+.basic-card, .pro-card, .business-card, .enterprice-card {
+    position: relative;
+    overflow: hidden;
+}
+.basic-card::before, .pro-card::before, .business-card::before, .enterprice-card::before{
+    content: '';
+    width: 100%;
+    height: 20px;
+    background-color: #ff8500;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.pro-card::before {
+    background-color: #a513ff !important;
+}
+.business-card::before {
+    background-color: #71aa27 !important;
+}
+.enterprice-card::before {
+    background-color: #1d5edd!important;
+}
+.host-type {
+    font-size: 25px;
+    padding-bottom: 10px;
+    font-weight: 500;
+}
+.header-card {
+    padding: 30px 0px 20px 20px;
+}
+.header-card p {
+    padding: 5px 0;
+}
+.card-body {
+    padding: 10px 0 20px 20px;
+}
+.btn-subscribe {
+    width: 97%;
+    margin: 30px 0;
+    padding: 10px;
+    border-radius: 15px;
+    outline: none;
+    border: 2px solid #ff8500;
+    color: #ff8500;
+    background-color: transparent;
+    font-size: 20px;
+    font-weight: 700;
+}
+.pro-card .btn-subscribe {
+    border-color: #a513ff;
+    margin: 15px 0;
+    color: #a513ff;
+}
+.business-card .btn-subscribe {
+    margin: 30px 0;
+    border-color: #71aa27;
+    color: #71aa27;
+}
+.enterprice-card .btn-subscribe {
+    margin: 15px 0;
+    border-color: #1d5edd;
+    color: #1d5edd;
+}
+.text-host {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    color: white;
+    padding: 0px 35px 50px;
+    text-align: center;
+    width: 70%;
+    margin: auto;
+}
+ .main-pargraph {
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 50px 0 30px;
+}
+.footer-host {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100% !important;
+}
+@media screen and  (max-width:1200px){
+    .card-host {
+        width: 47%;
+        margin: 10px auto;
+    }
+    .Host .title {
+        padding: 0;
+    }
+}
+@media screen and  (max-width:700px){
+    .cards-host {
+        padding: 0;
+    }
+}
+@media screen and  (max-width:630px) {
+    .card-host {
+        width: 90%;
+    }
+}
+@media screen and  (max-width:400px) {
+    .header-card {
+        padding: 30px 0px 20px 3px;
+    }
+    .header-card p {
+        padding: 0;
+    }
+    .card-body {
+        padding: 0px 0 20px 3px;
+    }
+}

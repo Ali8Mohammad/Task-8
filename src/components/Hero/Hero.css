@@ -1,0 +1,226 @@
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100vh;
+    position: relative;
+}
+.gameboy {
+    display: none;
+}
+.content {
+    position: absolute;
+    top: 126px;
+    padding-left: 30px;
+    width: 60%;
+    z-index: 2;
+}
+.content h3 {
+    width: 100%;
+    padding-bottom: 45px;
+    color: #ff8500;;
+    font-size: 30px;
+    font-weight: 700;
+}
+.content p {
+    line-height: 2;
+    font-weight: bold;
+    font-size: 20px;
+}
+.footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+.Images {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+.Images::before {
+    content: 'Start';
+    position: absolute;
+    left: 60%;
+    top: -50%;
+    color: #ff8500;
+    z-index: 6;
+    font-size: 27px;
+    font-weight: 700;
+}
+.Images .footer-img {
+    width: 100%;
+    z-index: 1;
+}
+.Images .game, .Images .gameboy {
+    position: absolute;
+    bottom: 43px;
+    right: 14px;
+    width: 21vw;
+    z-index: 1;
+}
+.Images .start {
+    position: absolute;
+    top: -90%;
+    right: 10%;
+    z-index: 10;
+}
+.Images .pattren {
+    position: absolute;
+    top: -420px;
+    right: 0px;
+    z-index: 0;
+    transition: width .3s ease-in-out;
+}
+.links-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    position: absolute;
+    padding: 0 0 0 31px;
+    bottom: 24px;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+.links-footer .scroll {
+    color: #fff;
+    position: relative;
+    font-family: "main";
+    margin-left: 190px;
+}
+.social-hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ .links-footer .social-hero p:not(:first-child) {
+    margin-left: 9px;
+}
+.copy-right-hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+/* Responsive */
+@media screen and (max-width:1167px) {
+    .content p {
+        font-size: 16px !important;
+    }
+}
+@media screen and (max-width: 930px) {
+    .game {
+        display: none;
+    }
+    .gameboy {
+        display: block;
+        z-index: 11;
+        right: 10% !important;
+    }
+    .Images::before {
+        display: none;
+    }
+    .Images .start {
+        display: none;
+    }
+    .content p {
+        font-size: 14px;
+    }
+    .Images .pattren {
+        width: 10%;
+    }
+}
+@media screen and (max-width: 783px) {
+    .content {
+        top: 12%;
+    }
+}
+@media screen and (max-width: 750px) {
+    .gameboy {
+        right: 20% !important;
+    }
+}
+@media screen and (max-width: 680px) {
+    .hero {
+        justify-content: center !important;
+    }
+    .content {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important; 
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 0 10px;
+    }
+    .Images {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .content h3  {
+        padding: 0 !important;
+    }
+     .gameboy {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100% !important;
+        text-align: center;
+        right: 9% !important;
+    }
+   .links-footer {
+        justify-content: space-between;
+        padding: 0 !important;
+    }
+     .footer {
+         background-color: #ff8500;
+         height: 30vh;
+    }
+    .social-hero{
+    width: 50%;
+    background-color: #ff8500;
+    }
+    .footer-img {
+       display: none;
+    }
+}
+@media screen and (max-width: 595px) {
+    .content h3 {
+        font-size: 24px;
+        padding-bottom: 20px !important;
+    }
+    .content p {
+        font-size: 14px !important;
+    }
+}
+@media screen and (max-width: 514px) {
+    .content h3 {   
+        padding-bottom: 10px !important;
+    }
+}
+.copy-right-hero p {
+    font-size: 12px;
+}
+@media screen and (max-width: 460px) {
+    .content h3 {
+        padding: 30px 0 0;
+        font-size: 20px;
+    }
+    .content p {
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 395px) {
+    .content {
+        padding: 0 0 0 10px !important;
+        top: 9% !important;
+    }
+    .content p {
+        line-height: 1.5;
+    }
+}

@@ -1,0 +1,116 @@
+.main-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    color: white;
+    background-color: #222222;
+    padding: 50px 10px 50px 30px;
+}
+.footer-logo {
+    margin-bottom: 50px;
+}
+.footer-contact {
+    width: 30% !important;
+    margin-bottom: 70px;
+}
+.footer-contact span{
+    padding-bottom: 24px;
+    padding-left: 1px;
+}
+.col {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 15%;
+}
+.col h6, .col p {
+    width: 100%;
+}
+.col h6 {
+    font-size: 17px;
+    font-weight: 500;
+    padding-bottom: 5px;
+}
+.col a {
+    color: inherit;
+    text-decoration: none;
+}
+.social-main-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+.numper-p {
+    padding-bottom: 20px;
+}
+.col-2 {
+    padding-bottom: 20px !important;
+}
+.useful-links {
+    padding-bottom: 24px;
+}
+.last-footer {
+    position: relative;
+    width: 100%;
+}
+.last-footer span {
+    background-color: white;
+    position: absolute;
+    height: 1px;
+    width: 63%;
+    right: 5%;
+    transition: width 1s ease-in-out;
+}
+@media screen and (max-width:1150px) {
+    .footer-contact {
+        width: 50% !important;
+    }
+    .col {
+        width: 40%;
+        margin-bottom: 5px;
+    }
+    .last-footer {
+        margin-top: 30px;
+    }
+    .last-footer span {    
+        width: 53%;
+        right: 0%;
+    }
+}
+@media screen and (max-width:800px) {
+    .last-footer span {
+        width: 42%;
+    }
+    .last-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .last-footer p {
+        width: 50%;
+    }
+}
+@media screen and (max-width:462px) {
+    .footer-contact {
+        width: 80% !important;
+    }
+    .col {
+        width: 80% !important;
+        margin: 0 auto !important;
+    }
+    .col-2 {
+        margin: 50px auto 0 !important;
+    }
+}
+@media screen and (max-width:303px) {
+    .footer-logo {
+        width: 50%;
+    }
+    .footer-contact span {
+        padding-left: 0px;
+    }
+}
