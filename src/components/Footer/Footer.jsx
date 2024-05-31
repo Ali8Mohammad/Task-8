@@ -1,10 +1,12 @@
-import './Footer.css'
+import './Footer.css';
+import imageLogo from '../../../public/Img/logo.png'
+
 function Footer() {
     return(
         <>
         <footer className='main-footer' id='footer'>
             <div className='footer-contact col'>
-                <img className='footer-logo' src="../../../public/Img/logo.png" alt="" />
+                <img className='footer-logo' src={imageLogo} alt="" />
                 <span>. agency</span>
                 <h6>Head Office</h6>
                 <a href="">Syria - Latakia - grh2+hjx35.5199518</a>
