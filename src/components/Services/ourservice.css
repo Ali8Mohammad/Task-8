@@ -90,7 +90,7 @@
         margin: 10px 0 0 0 ;
     }
 }
-@media screen and (max-width:371px) {
+@media screen and (max-width:452px) {
     .branding, .Marketing {
         width: 98% !important;
         height: 630px;
@@ -99,6 +99,6 @@
     }
     .branding-content , .marketing-content {
         height: 520px;
-        padding: 10px;
+        padding: 0px 0 0 5px;
     }
 }
